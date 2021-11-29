@@ -13,8 +13,8 @@
 # echo ""  
 # RunAsAdmin=%~dp0%..\bin\nirCmdc.exe elevatecmd execmd
 #    ${RunAsAdmin}  mkLink /D  _2  ${aRepoDir}\_2
-
-  if [ -f _2/bin/frt ]; then 
+  
+  if [ -f "_2/bin/frt.cmd" ]; then 
 
   echo "   Filename             Size   Date    Time"
   echo "   -------------------  -----  ------------"
@@ -24,12 +24,12 @@
 
   echo "" 
   echo "   Run Cmd:  FRT (may require restarting this console)"
-  echo "" 
+# echo "" 
            frt 
 
   else 
-  echo "" 
+# echo "" 
   echo "** The folder, FormR/_2, has not been linked"
-    fi          
   echo ""         
+    fi          
 
